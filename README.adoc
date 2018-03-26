@@ -1,0 +1,23 @@
+= Asciidoctor source highlighting
+
+Apply source highlighting at build time!
+
+== Usage
+
+```js
+const asciidoctor = require('asciidoctor.js')()
+const sourceHighlightingExtension = require('asciidoctor-extension-source-highlighting')
+
+const registry = asciidoctor.Extensions.create()
+sourceHighlightingExtension.register(registry)
+
+asciidoctor.convertFile('path/to/content.adoc', {
+  to_file: 'path/to/content.html',
+  backend: 'html5',
+  extension_registry: registry
+})
+```
+
+== License
+
+MIT License.
