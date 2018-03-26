@@ -1,0 +1,29 @@
+{
+  "name": "asciidoctor-extension-source-highlighting",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Mogztter/asciidoctor-extension-source-highlighting.git",
+  "author": "Guillaume Grossetie <ggrossetie@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint index.js test"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "eslint": "^4.19.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "mocha": "^5.0.5"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "highlight.js": "^9.12.0"
+  },
+  "peerDependencies": {
+    "asciidoctor.js": "^1.5.6-rc.1"
+  }
+}
